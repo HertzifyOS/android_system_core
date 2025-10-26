@@ -1158,6 +1158,10 @@ static void SetSafetyNetProps() {
         {"sys.oem_unlock_allowed", "0"},
         {"ro.crypto.state", "encrypted"},
         {"init.svc.adbd", "stopped"},
+        {"ro.oem_unlock_supported", "0"},
+        {"ro.is_ever_orange", "0"},
+        {"ro.secureboot.devicelock", "1"},
+        {"ro.secureboot.lockstate", "locked"},
     };
 
     for (const auto& [name, value] : props) {
